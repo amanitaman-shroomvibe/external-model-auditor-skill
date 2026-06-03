@@ -1,0 +1,14 @@
+{
+  "name": "external-model-auditor-skill",
+  "version": "1.0.0",
+  "description": "Codex skill for reliable external multi-model audits through OpenRouter.",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "codex-skills",
+    "skill-md",
+    "skillsmp",
+    "openrouter",
+    "audit"
+  ]
+}

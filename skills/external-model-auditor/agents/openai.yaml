@@ -1,0 +1,4 @@
+interface:
+  display_name: "External Model Auditor"
+  short_description: "Reliable multi-model audits through OpenRouter-style APIs."
+  default_prompt: "Audit this project with three external models, validate the outputs, synthesize findings, and avoid schema/context failures."

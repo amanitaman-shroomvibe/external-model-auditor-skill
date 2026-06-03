@@ -1,0 +1,99 @@
+{
+  "updated": "2026-06-02",
+  "method": "Curated task-specific panels verified against OpenRouter /api/v1/models at runtime. External leaderboard signals are used as guidance, not scraped live, because public ranking pages change and often lack stable APIs.",
+  "default_panel": "basic",
+  "panel_sizes": {
+    "basic": 3,
+    "expanded": 5
+  },
+  "aliases": {
+    "general": ["general", "audit", "quality", "review"],
+    "code": ["code", "coding", "engineering", "programming", "frontend", "backend", "react", "next", "python", "typescript"],
+    "security": ["security", "auth", "privacy", "vulnerability", "secrets", "compliance"],
+    "marketing": ["marketing", "ads", "direct", "seo", "copy", "conversion", "positioning", "brand", "yandex"],
+    "strategy": ["strategy", "product", "business", "monetization", "roadmap", "pricing"],
+    "ux": ["ux", "ui", "design", "interface", "usability", "landing"],
+    "legal": ["legal", "law", "contract", "policy", "terms", "gdpr", "document"],
+    "data": ["data", "analytics", "metrics", "attribution", "dashboard", "spreadsheet"]
+  },
+  "profiles": {
+    "general": [
+      "anthropic/claude-opus-4.8",
+      "google/gemini-3.1-pro-preview",
+      "deepseek/deepseek-v4-pro",
+      "qwen/qwen3.7-max",
+      "mistralai/mistral-large-2512",
+      "anthropic/claude-opus-4.8-fast"
+    ],
+    "code": [
+      "anthropic/claude-opus-4.8",
+      "deepseek/deepseek-v4-pro",
+      "google/gemini-3.1-pro-preview",
+      "qwen/qwen3-coder-plus",
+      "mistralai/devstral-2512",
+      "mistralai/codestral-2508",
+      "qwen/qwen3.7-max"
+    ],
+    "security": [
+      "anthropic/claude-opus-4.8",
+      "google/gemini-3.1-pro-preview",
+      "deepseek/deepseek-v4-pro",
+      "qwen/qwen3.7-max",
+      "mistralai/mistral-large-2512",
+      "anthropic/claude-opus-4.8-fast"
+    ],
+    "marketing": [
+      "anthropic/claude-opus-4.8",
+      "google/gemini-3.1-pro-preview",
+      "qwen/qwen3.7-max",
+      "deepseek/deepseek-v4-pro",
+      "mistralai/mistral-large-2512",
+      "~google/gemini-pro-latest"
+    ],
+    "strategy": [
+      "anthropic/claude-opus-4.8",
+      "google/gemini-3.1-pro-preview",
+      "qwen/qwen3.7-max",
+      "mistralai/mistral-large-2512",
+      "deepseek/deepseek-v4-pro",
+      "~anthropic/claude-opus-latest"
+    ],
+    "ux": [
+      "anthropic/claude-opus-4.8",
+      "google/gemini-3.1-pro-preview",
+      "qwen/qwen3.7-max",
+      "deepseek/deepseek-v4-pro",
+      "mistralai/mistral-large-2512",
+      "google/gemini-3.5-flash"
+    ],
+    "legal": [
+      "anthropic/claude-opus-4.8",
+      "google/gemini-3.1-pro-preview",
+      "mistralai/mistral-large-2512",
+      "deepseek/deepseek-v4-pro",
+      "qwen/qwen3.7-max",
+      "~anthropic/claude-opus-latest"
+    ],
+    "data": [
+      "google/gemini-3.1-pro-preview",
+      "anthropic/claude-opus-4.8",
+      "deepseek/deepseek-v4-pro",
+      "qwen/qwen3.7-max",
+      "mistralai/mistral-large-2512",
+      "google/gemini-3.5-flash"
+    ]
+  },
+  "fallback": [
+    "anthropic/claude-opus-4.8",
+    "google/gemini-3.1-pro-preview",
+    "deepseek/deepseek-v4-pro",
+    "qwen/qwen3.7-max",
+    "mistralai/mistral-large-2512"
+  ],
+  "sources": [
+    "OpenRouter /api/v1/models for live availability, context, supported parameters, and pricing",
+    "OpenRouter Rankings as usage/market signal when available",
+    "LMArena/WebDev Arena and public benchmark summaries as category signal",
+    "Artificial Analysis-style intelligence/quality/performance signals when available"
+  ]
+}
